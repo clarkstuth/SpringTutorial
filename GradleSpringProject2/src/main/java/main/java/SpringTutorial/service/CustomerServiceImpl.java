@@ -8,13 +8,13 @@ import main.java.SpringTutorial.repository.HibernateCustomerRepositoryImpl;
 
 public class CustomerServiceImpl implements CustomerService {
 
-	private CustomerRepository customerRepository = new HibernateCustomerRepositoryImpl();
-	
-	/* (non-Javadoc)
-	 * @see main.java.SpringTutorial.service.CustomerService#findAll()
-	 */
-	public List<Customer> findAll() {
-		return customerRepository.findAll();
-	}
-	
+    private CustomerRepository customerRepository = new HibernateCustomerRepositoryImpl();
+    
+    /* (non-Javadoc)
+     * @see main.java.SpringTutorial.service.CustomerService#findAll()
+     */
+    public List<Customer> findAll() {
+        return customerRepository.findAll();
+    }
+    
 }

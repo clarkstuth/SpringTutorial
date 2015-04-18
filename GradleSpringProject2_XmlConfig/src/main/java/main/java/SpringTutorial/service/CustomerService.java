@@ -6,6 +6,6 @@ import main.java.SpringTutorial.model.Customer;
 
 public interface CustomerService {
 
-	List<Customer> findAll();
+    List<Customer> findAll();
 
 }
