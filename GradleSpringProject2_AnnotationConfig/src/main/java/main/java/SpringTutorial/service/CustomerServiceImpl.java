@@ -5,27 +5,19 @@ import java.util.List;
 import main.java.SpringTutorial.model.Customer;
 import main.java.SpringTutorial.repository.CustomerRepository;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service("customerService")
 public class CustomerServiceImpl implements CustomerService {
 
     private CustomerRepository customerRepository;
 
-    public CustomerServiceImpl() {
-    	
+    @Autowired
+    public CustomerServiceImpl(CustomerRepository customerRepository) {
+        this.customerRepository = customerRepository;        
     }
     
-    public CustomerServiceImpl(CustomerRepository customerRepository) {
-        this.customerRepository = customerRepository;
-    }
-
-    public void setCustomerRepository(CustomerRepository customerRepository) {
-        this.customerRepository = customerRepository;
-    }
-
-    /*
-     * (non-Javadoc)
-     * 
-     * @see main.java.SpringTutorial.service.CustomerService#findAll()
-     */
     public List<Customer> findAll() {
         return customerRepository.findAll();
     }

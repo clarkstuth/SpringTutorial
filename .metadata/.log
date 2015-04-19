@@ -607,3 +607,75 @@ java.io.FileNotFoundException: class path resource [main/java/SpringTutorial/ser
 
 !ENTRY org.eclipse.ui 4 4 2015-04-18 19:02:08.089
 !MESSAGE Conflicting handlers for org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu: {org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@6bc467ce} vs {org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@2b7b3ca8}
+
+!ENTRY org.eclipse.ui 4 4 2015-04-18 19:09:21.892
+!MESSAGE Conflicting handlers for org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu: {org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@6bc467ce} vs {org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@2b7b3ca8}
+
+!ENTRY org.eclipse.jdt.core 4 0 2015-04-18 19:09:22.502
+!MESSAGE Code assist internal error
+!STACK 0
+java.lang.UnsupportedOperationException
+	at java.util.Collections$UnmodifiableMap.put(Unknown Source)
+	at org.codehaus.groovy.ast.ImmutableClassNode.enableWriteProtection(ImmutableClassNode.java:128)
+	at org.codehaus.groovy.ast.ImmutableClassNode.getDeclaredMethods(ImmutableClassNode.java:120)
+	at org.codehaus.groovy.ast.ClassNode.getMethods(ClassNode.java:986)
+	at org.eclipse.jdt.groovy.search.CategoryTypeLookup.lookupType(CategoryTypeLookup.java:69)
+	at org.eclipse.jdt.groovy.search.TypeInferencingVisitorWithRequestor.lookupExpressionType(TypeInferencingVisitorWithRequestor.java:2047)
+	at org.eclipse.jdt.groovy.search.TypeInferencingVisitorWithRequestor.handleSimpleExpression(TypeInferencingVisitorWithRequestor.java:2015)
+	at org.eclipse.jdt.groovy.search.TypeInferencingVisitorWithRequestor.visitVariableExpression(TypeInferencingVisitorWithRequestor.java:947)
+	at org.codehaus.groovy.ast.expr.VariableExpression.visit(VariableExpression.java:70)
+	at org.eclipse.jdt.groovy.search.TypeInferencingVisitorWithRequestor.visitMethodCallExpression(TypeInferencingVisitorWithRequestor.java:1641)
+	at org.codehaus.groovy.ast.expr.MethodCallExpression.visit(MethodCallExpression.java:64)
+	at org.codehaus.groovy.ast.CodeVisitorSupport.visitExpressionStatement(CodeVisitorSupport.java:71)
+	at org.codehaus.groovy.ast.ClassCodeVisitorSupport.visitExpressionStatement(ClassCodeVisitorSupport.java:236)
+	at org.codehaus.groovy.ast.stmt.ExpressionStatement.visit(ExpressionStatement.java:40)
+	at org.codehaus.groovy.ast.CodeVisitorSupport.visitBlockStatement(CodeVisitorSupport.java:37)
+	at org.codehaus.groovy.ast.ClassCodeVisitorSupport.visitBlockStatement(ClassCodeVisitorSupport.java:206)
+	at org.eclipse.jdt.groovy.search.TypeInferencingVisitorWithRequestor.visitBlockStatement(TypeInferencingVisitorWithRequestor.java:1408)
+	at org.codehaus.groovy.ast.stmt.BlockStatement.visit(BlockStatement.java:69)
+	at org.codehaus.groovy.ast.ClassCodeVisitorSupport.visitClassCodeContainer(ClassCodeVisitorSupport.java:103)
+	at org.codehaus.groovy.ast.ClassCodeVisitorSupport.visitConstructorOrMethod(ClassCodeVisitorSupport.java:114)
+	at org.eclipse.jdt.groovy.search.TypeInferencingVisitorWithRequestor.visitConstructorOrMethod(TypeInferencingVisitorWithRequestor.java:842)
+	at org.eclipse.jdt.groovy.search.TypeInferencingVisitorWithRequestor.visitJDT(TypeInferencingVisitorWithRequestor.java:571)
+	at org.eclipse.jdt.groovy.search.TypeInferencingVisitorWithRequestor.visitJDT(TypeInferencingVisitorWithRequestor.java:404)
+	at org.eclipse.jdt.groovy.search.TypeInferencingVisitorWithRequestor.visitCompilationUnit(TypeInferencingVisitorWithRequestor.java:352)
+	at org.codehaus.groovy.eclipse.codebrowsing.requestor.CodeSelectHelper.selectASTNode(CodeSelectHelper.java:107)
+	at org.codehaus.groovy.eclipse.search.GroovyOccurrencesFinder.initialize(GroovyOccurrencesFinder.java:221)
+	at org.codehaus.groovy.eclipse.editor.GroovyEditor.updateOccurrenceAnnotations(GroovyEditor.java:1259)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor$6.selectionChanged(JavaEditor.java:3380)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:178)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.ui 4 4 2015-04-18 19:15:10.108
+!MESSAGE Conflicting handlers for org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu: {org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@6bc467ce} vs {org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@2b7b3ca8}
+
+!ENTRY org.eclipse.ui 4 4 2015-04-18 19:15:21.386
+!MESSAGE Conflicting handlers for org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu: {org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@6bc467ce} vs {org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@2b7b3ca8}
+
+!ENTRY org.eclipse.ui 4 4 2015-04-18 19:15:25.760
+!MESSAGE Conflicting handlers for org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu: {org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@6bc467ce} vs {org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@2b7b3ca8}
+
+!ENTRY org.eclipse.ui 4 4 2015-04-18 19:15:28.516
+!MESSAGE Conflicting handlers for org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu: {org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@6bc467ce} vs {org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@2b7b3ca8}
+
+!ENTRY org.eclipse.ui 4 4 2015-04-18 19:15:31.425
+!MESSAGE Conflicting handlers for org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu: {org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@6bc467ce} vs {org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@2b7b3ca8}
+
+!ENTRY org.eclipse.ui 4 4 2015-04-18 19:15:33.565
+!MESSAGE Conflicting handlers for org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu: {org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@6bc467ce} vs {org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@2b7b3ca8}
+
+!ENTRY org.eclipse.ui 4 4 2015-04-18 19:18:13.938
+!MESSAGE Conflicting handlers for org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu: {org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@6bc467ce} vs {org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@2b7b3ca8}
+
+!ENTRY org.eclipse.ui 4 4 2015-04-18 19:19:18.637
+!MESSAGE Conflicting handlers for org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu: {org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@6bc467ce} vs {org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@2b7b3ca8}
+
+!ENTRY org.eclipse.ui 4 4 2015-04-18 19:20:45.826
+!MESSAGE Conflicting handlers for org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu: {org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@6bc467ce} vs {org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@2b7b3ca8}
+
+!ENTRY org.eclipse.ui 4 4 2015-04-18 19:21:52.909
+!MESSAGE Conflicting handlers for org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu: {org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@6bc467ce} vs {org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@2b7b3ca8}
+
+!ENTRY org.eclipse.jdt.core 4 969 2015-04-18 19:24:20.058
+!MESSAGE CustomerServiceImpl() [in CustomerServiceImpl [in [Working copy] CustomerServiceImpl.java [in main.java.SpringTutorial.service [in src/main/java [in GradleSpringProject2_AnnotationConfig]]]]] does not exist

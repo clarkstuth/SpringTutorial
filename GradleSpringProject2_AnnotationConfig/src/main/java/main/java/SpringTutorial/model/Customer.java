@@ -21,6 +21,4 @@ public class Customer {
         this.lastname = lastname;
     }
 
-    
-    
 }
